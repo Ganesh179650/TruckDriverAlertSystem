@@ -8,9 +8,10 @@ from email.mime.image import MIMEImage
 
 # ==================== Email Setup ====================
 def send_email_alert_with_photo(image_path):
-    sender_email = "gr179650@gmail.com"
-    sender_password ="rtnxzabvelkbzaaf"  # Use App Password if using Gmail with 2FA
-    receiver_email = "gr179650@gmail.com"
+sender_email = "your_email@gmail.com"
+sender_password = "your_app_password"  # Use Gmail App Password if 2FA enabled
+receiver_email = "recipient_email@example.com"
+
 
     msg = MIMEMultipart()
     msg['Subject'] = "🚨 Drowsiness Alert"
